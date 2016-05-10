@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project SuperLists -->
-<!-- Saved: 2016-05-08, 23:49:46 -->
+<!-- Saved: 2016-05-10, 00:30:47 -->
 <!-- Copyright (C) 2016 Forrest Palmer, palmerforrest@gmail.com -->
 <Project version="5.1">
   <Language></Language>
@@ -15,14 +15,17 @@
   <Eol index="-1"/>
   <Sources>
     <Source>__init__.py</Source>
-    <Source>functional_tests.py</Source>
+    <Source>functional_tests/__init__.py</Source>
+    <Source>functional_tests/tests.py</Source>
     <Source>lists/__init__.py</Source>
     <Source>lists/admin.py</Source>
     <Source>lists/apps.py</Source>
     <Source>lists/migrations/__init__.py</Source>
     <Source>lists/models.py</Source>
     <Source>lists/templates/home.html</Source>
+    <Source>lists/templates/list.html</Source>
     <Source>lists/tests.py</Source>
+    <Source>lists/urls.py</Source>
     <Source>lists/views.py</Source>
     <Source>manage.py</Source>
     <Source>superlists/__init__.py</Source>
