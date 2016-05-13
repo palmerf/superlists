@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project SuperLists -->
-<!-- Saved: 2016-05-10, 00:30:47 -->
+<!-- Saved: 2016-05-12, 09:20:51 -->
 <!-- Copyright (C) 2016 Forrest Palmer, palmerforrest@gmail.com -->
 <Project version="5.1">
   <Language></Language>
@@ -20,8 +20,21 @@
     <Source>lists/__init__.py</Source>
     <Source>lists/admin.py</Source>
     <Source>lists/apps.py</Source>
+    <Source>lists/migrations/0001_initial.py</Source>
+    <Source>lists/migrations/0002_item_text.py</Source>
+    <Source>lists/migrations/0003_list.py</Source>
+    <Source>lists/migrations/0004_item_list.py</Source>
     <Source>lists/migrations/__init__.py</Source>
     <Source>lists/models.py</Source>
+    <Source>lists/static/base.css</Source>
+    <Source>lists/static/bootstrap/css/bootstrap-theme.css</Source>
+    <Source>lists/static/bootstrap/css/bootstrap-theme.min.css</Source>
+    <Source>lists/static/bootstrap/css/bootstrap.css</Source>
+    <Source>lists/static/bootstrap/css/bootstrap.min.css</Source>
+    <Source>lists/static/bootstrap/js/bootstrap.js</Source>
+    <Source>lists/static/bootstrap/js/bootstrap.min.js</Source>
+    <Source>lists/static/bootstrap/js/npm.js</Source>
+    <Source>lists/templates/base.html</Source>
     <Source>lists/templates/home.html</Source>
     <Source>lists/templates/list.html</Source>
     <Source>lists/tests.py</Source>
@@ -145,6 +158,7 @@
     </VcsOtherData>
   </Vcs>
   <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.css" type="SOURCES"/>
     <FiletypeAssociation pattern="*.html" type="SOURCES"/>
     <FiletypeAssociation pattern="*.idl" type="INTERFACES"/>
     <FiletypeAssociation pattern="*.js" type="SOURCES"/>
