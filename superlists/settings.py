@@ -103,13 +103,13 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'America/New York'
-
 USE_I18N = True
 
 USE_L10N = True
 
 USE_TZ = True
+
+# TIME_ZONE = 'UTC-05:00'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
