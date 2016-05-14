@@ -23,10 +23,11 @@ e.g.,, on Ubuntu:
 
 ## Folder structure:
 Assume we have a user account at /home/USERNAME
+
 /home/USERNAME
-└── sites
-	└── SITENAME
-	├── database
-	├── source
-	├── static
-	└── virtualenv
+   └── sites
+      └── SITENAME
+      ├── database
+      ├── source
+      ├── static
+      └── virtualenv
