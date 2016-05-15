@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project SuperLists -->
-<!-- Saved: 2016-05-12, 09:20:51 -->
+<!-- Saved: 2016-05-15, 18:26:17 -->
 <!-- Copyright (C) 2016 Forrest Palmer, palmerforrest@gmail.com -->
 <Project version="5.1">
   <Language></Language>
@@ -15,7 +15,12 @@
   <Eol index="-1"/>
   <Sources>
     <Source>__init__.py</Source>
+    <Source>deploy_tools/fabfile.py</Source>
     <Source>functional_tests/__init__.py</Source>
+    <Source>functional_tests/base.py</Source>
+    <Source>functional_tests/test_layout_and_styling.py</Source>
+    <Source>functional_tests/test_list_item_validation.py</Source>
+    <Source>functional_tests/test_simple_list_creation.py</Source>
     <Source>functional_tests/tests.py</Source>
     <Source>lists/__init__.py</Source>
     <Source>lists/admin.py</Source>
@@ -24,6 +29,8 @@
     <Source>lists/migrations/0002_item_text.py</Source>
     <Source>lists/migrations/0003_list.py</Source>
     <Source>lists/migrations/0004_item_list.py</Source>
+    <Source>lists/migrations/0005_auto_20160515_1446.py</Source>
+    <Source>lists/migrations/0006_auto_20160515_1447.py</Source>
     <Source>lists/migrations/__init__.py</Source>
     <Source>lists/models.py</Source>
     <Source>lists/static/base.css</Source>
@@ -38,6 +45,9 @@
     <Source>lists/templates/home.html</Source>
     <Source>lists/templates/list.html</Source>
     <Source>lists/tests.py</Source>
+    <Source>lists/tests/__init__.py</Source>
+    <Source>lists/tests/test_models.py</Source>
+    <Source>lists/tests/test_views.py</Source>
     <Source>lists/urls.py</Source>
     <Source>lists/views.py</Source>
     <Source>manage.py</Source>
