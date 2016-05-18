@@ -60,3 +60,7 @@ class ItemValidationTest(FunctionalTest):
         error = self.get_error_element()
         self.assertFalse(error.is_displayed())
 
+
+    def test_for_dummies(self):
+        self.browser.get(self.server_url)
+
