@@ -1,5 +1,6 @@
 import sys
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 
 class FunctionalTest(StaticLiveServerTestCase):
@@ -13,11 +14,13 @@ class FunctionalTest(StaticLiveServerTestCase):
         cls.server_url = cls.live_server_url
 
     def setUp(self):
-        self.browser = webdriver.Firefox()
-        self.browser.implicitly_wait(3)
+        self.chrome_options = Options()
+        self.chrome_options.add_argument("--window-size=800,600")
+        self.browser = webdriver.Chrome(chrome_options=self.chrome_options)
+        self.browser.implicitly_wait(5)
 
     def tearDown(self):
-        self.browser.refresh()
+        #self.browser.refresh()
         self.browser.quit()
 
     def check_for_row_in_list_table(self, row_text):
