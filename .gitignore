@@ -3,4 +3,5 @@ __pycache__
 *.pyc
 .ropeproject
 _eric6project/
-.idea/
+workspace.xml
+
