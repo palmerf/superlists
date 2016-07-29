@@ -3,18 +3,31 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
+from .server_tools import reset_database
+
 
 class FunctionalTest(StaticLiveServerTestCase):
+
     @classmethod
     def setUpClass(cls):
         for arg in sys.argv:
             if 'liveserver' in arg:
-                cls.server_url = 'http://' + arg.split('=')[1]
+                cls.server_host = arg.split('=')[1]
+                cls.server_url = 'http://' + cls.server_host
+                cls.against_staging = True
                 return
         super().setUpClass()
+        cls.against_staging = False
         cls.server_url = cls.live_server_url
 
+    @classmethod
+    def tearDownClass(cls):
+        if not cls.against_staging:
+            super().tearDownClass()
+
     def setUp(self):
+        if self.against_staging:
+            reset_database(self.server_host)
         self.chrome_options = Options()
         self.chrome_options.add_argument("--window-size=800,600")
         self.browser = webdriver.Chrome(chrome_options=self.chrome_options)

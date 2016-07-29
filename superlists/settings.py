@@ -26,6 +26,9 @@ DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
 
+# This setting is changed by the deploy script
+DOMAIN = 'localhost'
+
 ALLOWED_HOSTS = ['superlists-staging.palmerf.com', '127.0.0.1', '192.168.1.13']
 
 # Application definition
@@ -39,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'lists',
     'accounts',
+    'functional_tests',
 ]
 
 MIDDLEWARE_CLASSES = [
